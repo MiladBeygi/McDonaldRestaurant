@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="header col-12-xl col-12-lg col-12-md col-12-sm col-12-sm">رستوران مک‌دونالد شعبه تهران</h1>
+    <div class="conatiner row pt-3">
+        <div class="foods row bg-secondary-light-2 mr-1 ml-1 col-8-xl col-8-lg col-8-md col-12-sm col-12-sm p-2">
+        </div>
+        <div class="paying-part bg-secondary-light-2 mt-2 mr-1 ml-1 col-3-xl col-3-lg col-3-md col-12-sm col-12-xs p-1">
+            <div class="row justify-space-between">
+                <div>جمع کل سفارشات:</div>
+                <div> <span class="allfoods-sum-price p-2"> 0 </span>تومان </div>
+            </div>
+            <div class="row justify-space-between">
+                <div>حق سرویس و کارمزد</div>
+                <div><span class="service-price p-2"> 0 </span>تومان </div>
+            </div>
+            <div class="row justify-space-between">
+                <div>تخفیف</div>
+                <div><span class="discount-price p-2"> 0 </span>تومان </div>
+            </div>
+            <div>
+                <input class="col-9-xl col-9-lg col-9-md col-9-sm col-9-xs" type="text" name="disccount" id="discount">
+                <button onclick="verifier()" class="col-2-xl col-2-lg col-2-md col-2-sm col-2-xs">&#10003;</button>
+            </div>
+            <div class="row justify-space-between">
+                <div>مبلغ قابل پرداخت </div>
+                <div><span class="total-sum-price p-1"> 0 </span>تومان </div>
+            </div>
+            <button onclick="confirmOrder()" class="col-12-xl col-12-lg col-12-md col-12-sm col-12-xs">ثبت
+                سفارش</button>
+        </div>
+    </div>
+    <div class="my-modal bg-blue-light-4 p-2 hidden-modal">
+        سفارش شما با موفقیت ثبت شد
+        <button class="col-10-xl col-10-lg col-10-md col-10-sm col-10-xs" onclick="reloadPage()"> ثبت </button>
+    </div>
+    <script src="1.js"></script>
+</body>
+
+</html>
